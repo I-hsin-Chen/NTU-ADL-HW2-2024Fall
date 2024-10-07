@@ -7,4 +7,4 @@ accelerate launch inference.py \
 --max_target_length 128 \
 --testing_file $1 \
 --output_path $2 \
---num_beams 1
+--num_beams 10

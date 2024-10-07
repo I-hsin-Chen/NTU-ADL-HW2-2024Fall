@@ -13,7 +13,6 @@ pip install rouge-score absl-py
 ```
 bash train.sh /path/to/train.jsonl /path/to/public.jsonl
 ```
-* You could adjust or add parameters `--num_beams`, `--top_k`, `--top_p` and `temperature` in `train.sh`
 * Model would be save at `--output-dir`
 
 ## Inference
@@ -28,3 +27,4 @@ The model would be located at `./model`
 bash ./run.sh /path/to/testing.jsonl /path/to/output.jsonl
 ```
 * The final prediction result would be saved at `./path/to/output.jsonl`.
+* You could adjust or add parameters `--num_beams`, `--top_k`, `--top_p` and `temperature` in `run.sh`
