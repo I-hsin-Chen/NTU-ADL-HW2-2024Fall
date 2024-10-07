@@ -1,0 +1,17 @@
+accelerate launch train.py \
+--model_name_or_path "google/mt5-small" \
+--source_prefix "summarize: " \
+--text_column maintext \
+--learning_rate 1e-4 \
+--checkpointing_steps "epoch" \
+--gradient_accumulation_steps 2 \
+--per_device_train_batch_size 2 \
+--num_warmup_steps 500 \
+--max_source_length 512 \
+--max_target_length 128 \
+--train_file $1 \
+--validation_file $2 \
+--output_dir "output/" \
+--with_tracking \
+--num_train_epochs 20 \
+--num_beams 10
