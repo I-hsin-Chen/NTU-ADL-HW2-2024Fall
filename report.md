@@ -51,7 +51,7 @@ T5 模型是一個可以應用於許多 Natural Language Generation (NLG) 下游
 
 ### Learning Curves
 
-![](C:\Users\User\Documents\NTU\Course\ADL\HW2\curve.png)
+![](https://github.com/I-hsin-Chen/NTU-ADL-HW2-2024Fall/blob/main/curve.png)
 
 ## Generation Strategies
 
